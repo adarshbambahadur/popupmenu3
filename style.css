@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #222;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.ad_popup-menu {
+  display: flex;
+  width: 95%;
+  max-width: 64.875em;
+  border-radius: 2.2em;
+  background-color: #fff;
+}
+
+/* first-section */
+
+.ad_side-section {
+  width: 28.9375em;
+  padding: 2em 2.5em;
+  background: linear-gradient(
+    179.98deg,
+    rgba(147, 57, 242, 0.61) 0.02%,
+    rgba(17, 212, 255, 0.14) 99.98%
+  );
+  border-radius: 2.2em 0px 0px 2.2em;
+}
+
+.ad_quit {
+  max-width: 3.4375em;
+  cursor: pointer;
+}
+
+.ad_hand-shake {
+  margin: 5em auto 0 auto;
+  margin-top: 8em;
+}
+
+/* second-section */
+
+.ad_main-section {
+  width: 35.9375em;
+  padding: 3em 3.5em;
+  border-radius: 0px 2.2em 2.2em 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ad_partner {
+  font-size: 2.25em;
+  line-height: 49px;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.ad_input {
+  width: 100%;
+  margin-bottom: 1.2em;
+  font-size: 1.5em;
+  line-height: 33px;
+  border: none;
+  border-bottom: 1.4px solid #000;
+}
+
+.ad_input::placeholder {
+  opacity: 0.95;
+}
+
+.ad_upload {
+  padding: 0.8em 1em;
+  font-size: 1.5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eeeeee;
+  border-radius: 0.625em;
+  margin-bottom: 0.5em;
+}
+
+.ad_upload img {
+  max-width: 1.4em;
+  cursor: pointer;
+}
+
+/* Your Message */
+
+.ad_your-message {
+  font-size: 1.5em;
+  line-height: 33px;
+  color: #000000;
+}
+
+.ad_message {
+  padding: 1.2em 1.5em;
+  width: 100%;
+  font-size: 1.125em;
+  height: 9.875em;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 0.8125em;
+  margin-bottom: 2em;
+}
+
+/* submit button */
+
+.ad_submit {
+  margin: 0 auto;
+  font-weight: bold;
+  width: 13em;
+  height: 3.2em;
+  color: #fff;
+  background: #5a377f;
+  box-shadow: 0px 8px 43px 1px rgba(90, 55, 127, 1);
+  border: none;
+  border-radius: 2.71875em;
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+  }
+
+  .ad_popup-menu {
+    flex-direction: column;
+  }
+
+  .ad_side-section {
+    border-radius: 2.2em 2.2em 0 0;
+    width: 100%;
+  }
+
+  .ad_quit {
+    max-width: 3em;
+    margin-left: auto;
+  }
+
+  .ad_hand-shake {
+    max-width: 14em;
+    margin-top: 0;
+  }
+
+  .ad_main-section {
+    width: 100%;
+  }
+}
